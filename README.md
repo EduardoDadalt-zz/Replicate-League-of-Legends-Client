@@ -1,2 +1,2 @@
-# Replicate-League-of-Legends-Login
+# Replicate-League-of-Legends-Client
 Try replicate in React login screen of Riot games 
