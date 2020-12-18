@@ -78,7 +78,7 @@ const LoginPage = () => {
                 <Form.Group className="d-flex justify-content-between">
                   <Button type="submit">Entrar como Convidado</Button>
                   <Button type="submit" variant="danger">
-                    Entrar
+                    Sing In
                   </Button>
                 </Form.Group>
               </Form>
