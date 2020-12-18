@@ -9,7 +9,7 @@ interface AuthProps {
   setIsLoggin: Dispatch<SetStateAction<boolean>>;
 }
 const AuthProvider = ({ children }) => {
-  const [isLoggin, setIsLoggin] = useState(true);
+  const [isLoggin, setIsLoggin] = useState(false);
   return (
     <Auth.Provider value={{ isLoggin, setIsLoggin }}>{children}</Auth.Provider>
   );

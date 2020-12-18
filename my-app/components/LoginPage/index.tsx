@@ -111,7 +111,7 @@ const LoginPage = () => {
               layout="fill"
               src="/loginscreen img.jpg"
               objectFit="cover"
-              objectPosition="0 70%"
+              objectPosition="50% 50%"
             />
             <Att />
           </Col>
