@@ -7,6 +7,7 @@ const HomePage = () => {
   return (
     <div className="fullscreen">
       <HeaderHome />
+      <div>Under construction...</div>
     </div>
   );
 };

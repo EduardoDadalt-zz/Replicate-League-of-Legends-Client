@@ -35,7 +35,7 @@ const LoginPage = () => {
     setIsLoggin(true);
   };
   return (
-    <div className={Styles.home_container}>
+    <div className="fullscreen">
       <Head>
         <title>Login</title>
       </Head>
