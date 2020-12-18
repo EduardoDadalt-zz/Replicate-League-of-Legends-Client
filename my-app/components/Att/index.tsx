@@ -1,17 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const Att = () => {
-  const [porcentage, setPorcentage] = useState(1);
-  useEffect(() => {
-    let id = setInterval(() => {
-      if (porcentage < 100) setPorcentage(porcentage + 1);
-      else setPorcentage(0);
-    }, 100);
-
-    return () => {
-      clearInterval(id);
-    };
-  }, [porcentage]);
+  const [porcentage, setPorcentage] = useState(50);
 
   return (
     <div
