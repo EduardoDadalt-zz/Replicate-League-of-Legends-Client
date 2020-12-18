@@ -14,7 +14,14 @@ const Att = () => {
   }, [porcentage]);
 
   return (
-    <div style={{ position: "absolute", right: 40, width: "50%", bottom: 40 }}>
+    <div
+      style={{
+        position: "absolute",
+        width: "50%",
+        right: "2rem",
+        bottom: "2rem",
+      }}
+    >
       <span className="text-primary">Verificar...</span>
       <div style={{ height: 10, width: "100%" }}>
         <div style={{ backgroundColor: "var(--gray)" }}>
