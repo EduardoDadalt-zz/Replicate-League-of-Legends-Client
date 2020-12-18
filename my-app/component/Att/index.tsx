@@ -1,7 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Att = () => {
-  return <div>Atualizando...</div>;
+  const [porcentage, setPorcentage] = useState(1);
+  useEffect(() => {
+    let id = setInterval(() => {
+      if (porcentage < 100) setPorcentage(porcentage + 1);
+      else setPorcentage(0);
+    }, 100);
+
+    return () => {
+      clearInterval(id);
+    };
+  }, [porcentage]);
+
+  return (
+    <div style={{ position: "absolute", right: 40, width: "50%", bottom: 40 }}>
+      <span className="text-primary">Verificar...</span>
+      <div style={{ height: 10, width: "100%" }}>
+        <div style={{ backgroundColor: "var(--gray)" }}>
+          <div
+            style={{
+              backgroundColor: "var(--cyan)",
+              width: porcentage + "%",
+              height: 10,
+              transitionProperty: "width",
+              transitionDuration: "0.2s",
+            }}
+          ></div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Att;
