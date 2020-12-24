@@ -1,0 +1,15 @@
+.checkboxStatus {
+}
+
+.textOnline {
+  color: "green";
+}
+
+.textAbsent {
+  color: "red";
+}
+
+.icon {
+  border: 1000px solid black;
+  border-radius: 50%;
+}
